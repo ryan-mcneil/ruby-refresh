@@ -1,5 +1,11 @@
-<%= image_tag @portfolio_item.thumb_image unless @portfolio_item.thumb_image.nil? %>
+<%= image_tag @portfolio_item.main_image unless @portfolio_item.thumb_image.nil? %>
 
 <h1><%= @portfolio_item.title%></h1>
 <em><%= @portfolio_item.subtitle%></em>
 <p><%= @portfolio_item.body%></p>
+
+<h2>Technologies used:</h2>
+
+<% @portfolio_item.technologies.each do |t| %>
+  <p><%= t.name %></p>
+<% end %>

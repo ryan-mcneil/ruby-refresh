@@ -5,16 +5,17 @@ class PortfoliosController < ApplicationController
     # @portfolio_items = Portfolio.ruby_on_rails_portfolio_items
     @portfolio_items = Portfolio.all
   end
-
+  
   def angular
     @angular_portfolio_items = Portfolio.angular
   end
-
+  
   def show
   end
-
+  
   def new
     @portfolio_item = Portfolio.new
+    3.times { @portfolio_item.technologies.build }
   end
 
   def create
@@ -61,5 +62,5 @@ private
 
   # Only allow a list of trusted parameters through.
   def portfolio_item_params
-    params.require(:portfolio).permit(:title, :subtitle, :body)
+    params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
   end
