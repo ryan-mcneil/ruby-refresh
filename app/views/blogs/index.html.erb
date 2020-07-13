@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Date</th>
       <th>Body</th>
       <th>Status</th>
       <th colspan="4"></th>
@@ -13,9 +14,7 @@
   </thead>
 
   <tbody>
-    <% @blogs.each do |blog| %>
       <%= render @blogs %>
-    <% end %>
   </tbody>
 </table>
 
