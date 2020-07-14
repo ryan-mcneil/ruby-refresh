@@ -115,15 +115,19 @@ body {
  * Custom Styles
  */
 
- .card {
-   margin: auto
- }
+.card {
+  margin: auto
+}
 
- .card-body {
-   text-align: left;
-   color: black
- }
+.card-body {
+  text-align: left;
+  color: black
+}
 
- .auth-links a {
-   color: black
- }
+.auth-links a {
+  color: black;
+}
+
+.register-text {
+  text-align: right;
+}
