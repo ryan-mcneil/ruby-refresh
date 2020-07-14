@@ -16,31 +16,16 @@
 
   <body>
     <%= render 'shared/blog_nav' %>
-
-    <div class='container'>
-      <h3 class="pb-3 mb-4 font-italic border-bottom">
-        From the Firehose
-      </h3>
-      <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
-    
-    </div>
+    <%= render 'shared/blog_header' %>
 
     <main role="main" class="container">
       <div class="row">
         <%= yield %>
-    <%= render 'shared/blog_sidebar' %>
+        <%= render 'shared/blog_sidebar' %>
+      </div>
+    </main>
 
-
-      </div><!-- /.row -->
-    </main><!-- /.container -->
-
-    <footer class="blog-footer">
-      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-      <p>
-        <a href="#">Back to top</a>
-      </p>
-    </footer>
-
+    <%= render 'shared/blog_footer' %>
 
     <%= source_helper("blog") %>
 
