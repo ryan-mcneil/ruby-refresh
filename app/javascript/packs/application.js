@@ -7,6 +7,10 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require("jquery")
+require("popper.js")
+require("bootstrap")
+require("html.sortable")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -15,7 +19,3 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-
-//= require jquery3
-//= require popper
-//= require bootstrap-sprockets
