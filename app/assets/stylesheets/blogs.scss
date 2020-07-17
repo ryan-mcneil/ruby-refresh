@@ -55,6 +55,17 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: .875rem;
+  color: black
+}
+
+.nav-scroller .active {
+  color: rgb(0, 157, 255);
+  text-decoration: wavy;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+
 }
 
 .card-img-right {
