@@ -1249,3 +1249,5 @@ var sortable = (function () {
     return sortable;
   
   }());
+
+  export default sortable;
