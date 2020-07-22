@@ -15,7 +15,6 @@ $( () => {
     });
     sortable('.sortable')[0]
       .addEventListener('sortupdate', (e, i) => {
-        console.log(e);
         let updatedOrder = [];
         setPostions();
         $('.card').each( function(i) {
@@ -24,7 +23,6 @@ $( () => {
             position: i + 1
           })
         })
-        console.log('updatedOrder: ', updatedOrder)
         $.ajax({
           method: 'PUT',
           beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
