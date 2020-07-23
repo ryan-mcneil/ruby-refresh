@@ -170,6 +170,8 @@ body {
 
 .about-me {
   vertical-align: middle;
+  width: 90%;
+  margin: auto;
 }
 
 .border {
@@ -180,9 +182,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.about-me {
-  width: 90%;
-  margin: auto;
 }
