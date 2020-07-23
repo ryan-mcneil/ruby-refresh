@@ -17,7 +17,16 @@
   <body class="text-center">
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column text center">
       
+      <%= video_tag(
+        'cover_vid',
+        id: 'background',
+        autoplay: true,
+        loop: true,
+        muted: true,
+        poster: 'background.jpg'
+        )%>
       <div id="background"></div>
+
       <%= render 'shared/application_nav' %>
       
       <%= yield %>
