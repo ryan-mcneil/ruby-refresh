@@ -11,6 +11,7 @@ require("jquery-ui")
 require("popper.js")
 require("bootstrap")
 require("cocoon")
+require("gritter/js/jquery.gritter.js")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

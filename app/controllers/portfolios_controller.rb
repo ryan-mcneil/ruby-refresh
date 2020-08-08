@@ -31,11 +31,9 @@ class PortfoliosController < ApplicationController
     @portfolio_item = Portfolio.new(portfolio_params)
     
     respond_to do |format|
-      if @portfolio_item.save!
-        puts 'hi'
+      if @portfolio_item.save
         format.html { redirect_to portfolios_path, notice: 'Portfolio was successfully created.' }
       else
-        puts 'ho'
         format.html { render :new }
       end
     end
