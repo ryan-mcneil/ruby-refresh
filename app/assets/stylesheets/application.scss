@@ -49,7 +49,7 @@ body {
 }
 
 .cover-container {
-  width: 48em;
+  width: 55em;
 }
 
 
@@ -183,4 +183,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.tech-news {
+  color: black;
+  margin: 20px;
+  text-shadow: none;
+}
+
+.tech-news a {
+  color: #1da1f2;
+}
+
+.tech-news > .card {
+  padding: 30px;
 }
