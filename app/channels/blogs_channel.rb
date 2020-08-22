@@ -8,6 +8,8 @@ class BlogsChannel < ApplicationCable::Channel
   end
 
   def send_comment(data)
+    p 'data'
+    puts data
     current_user.comments.create!(content: data['comment'], blog_id: data['blog_id'])
   end
 end
