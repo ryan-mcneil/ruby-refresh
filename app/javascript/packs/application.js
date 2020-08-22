@@ -9,9 +9,9 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery-ui")
 require("popper.js")
-require("bootstrap")
 require("cocoon")
 require("gritter/js/jquery.gritter.js")
+require("bootstrap")
 
 //= require cable
 
