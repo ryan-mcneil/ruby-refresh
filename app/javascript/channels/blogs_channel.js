@@ -22,8 +22,6 @@ $(document).on('turbolinks:load', function () {
       },
 
       received(data) {
-        console.log("Receiving:");
-        console.log(data['comment']);
         comments.append(data['comment'])
       },
 
